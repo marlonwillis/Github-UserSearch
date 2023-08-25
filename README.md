@@ -11,7 +11,7 @@
 * Github API https://docs.github.com/en/rest
 * Node.js https://nodejs.org/en/
 * TypeScript https://www.typescriptlang.org/
-* 
+  
 # Setup Instalação
 * Copie o link deste repositório
 * Clone-o em sua sistema local
