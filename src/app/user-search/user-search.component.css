@@ -1,0 +1,182 @@
+.color-typos-4a6a92 {
+  color:#4A5568;
+  font-family: 'Inter', sans-serif;
+}
+.font-inter-700 {
+  font-family: 'Inter',sans-serif;
+  font-weight: 700;
+}
+.font-inter-400 {
+  font-family: 'Inter',sans-serif;
+  font-weight: 400;
+}
+.card {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px rgb(103 58 183 / 10%);
+    margin-bottom: -10px;
+    padding: 20px 10px;
+    /* text-align: center; */
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    margin-top: 30px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 11px 5px rgba(70, 41, 121, 0.25);
+    background: linear-gradient(-19deg, rgba(235, 174, 8, 0.95) 0px);
+  }
+  
+  .card-text a {
+    color: rgb(87, 87, 87);
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .users-names{
+    margin-bottom: -3px;
+    margin-left: 15px;
+  }
+  .h2-typo{
+    position: relative;
+    left: 8vh;
+    font-family: 'Nunito',sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 109px;
+    letter-spacing: 0.01em;
+    color:#0069CA
+  }
+  .h2-typo span {
+    color:#8C19D2
+  }
+  .ml-100 {
+    margin-left: -65px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ml-80{
+    margin-left: -80px;
+  }
+  .ml-5{
+    margin-left: 5px;
+  }
+  .card-img-top {
+    border-radius: 50%;
+    display: block;
+    float: none;
+    height: 48px;
+    line-height: 32px;
+    margin-left: 25px;
+    width: 48px;
+    margin-top: 11px;
+    
+  }
+  .card-1 {
+    display: flex;
+    flex-direction: row;
+  }
+ .repo-heading{
+    text-decoration: none;
+    color: #171923;
+    font-size: 20px;
+ }
+  input.no-submit {
+    border: 1px solid white;
+    width: 100%;
+    padding: 9px 4px 9px 4px;
+    /* You can use your image but having cleaner code is better, so I suggest saving the file and just linking it*/
+    /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z'/%3E%3C/svg%3E") ;*/
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/df/Magnifying-glass-1976105_640.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+  }
+
+  .follow {
+      justify-content: space-evenly;
+      font-size: 14px;
+  }
+  .follow p {
+    margin-bottom: 5px;
+}
+
+  .card-link {
+      text-decoration: none; 
+  }
+
+  .card {
+      font-size: 16px;
+  }
+
+  .display-5155{
+    padding-top: 0vh!important;
+  }
+  .display-5156{
+    padding-top: 40vh;
+  }
+  .float-right {
+      text-align: center;
+  }
+
+  .search-page #search-form input {
+    height: 100%;
+    border: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border-radius: 6px;
+    padding-left: 40px;
+    margin-top: 50px;
+    border-block: solid 1px #E2E8F0;
+  }
+  .button-contato{
+    display: flex;
+    margin-left: -85px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-search {
+    margin-left: 15px;
+  }
+  .btn-search,
+  .btn-search:hover {
+    background-color: #8C19D2;
+    color: whitesmoke;
+    transition: all 0.2s ease-out, color 0.2s ease-out;
+  }
+
+  .btn {
+    background-color: #8C19D2;
+    color: #fff;
+    padding: 10px 48px;
+}
+.btn-contato {
+  background-color: #8C19D2;
+  color: #fff;
+  padding: 10px 100px;
+  text-decoration: none;
+  font-family: 'Nunito',sans-serif;
+  font-weight: 700;
+}
+.align-itens-1 {align-items: flex-end;}
+.d-flex-1 {display: flex;}
+.card-repo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+
+
+}
+.inline-content {
+  display: flex;
+  flex-direction: row;
+}
+.fa-circle:before {
+  font-size: 5px;
+  padding-right: 5px;
+}

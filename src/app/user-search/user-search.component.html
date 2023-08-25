@@ -1,0 +1,89 @@
+<div class="container search-page">
+    <div class="row display-5156" id="display-5156">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 ">
+            <div>
+                <h2 class="h2-typo">Search <span>d_evs</span></h2>
+                <form class="d-flex-1 align-itens-1" (ngSubmit)="searchGithubUser()" id="search-form" #f="ngForm">
+                    <input type="text" class="form-control search no-submit" ngModel name="search" placeholder="Search" required #search="ngModel"><div><button onclick="Display_Search()" type="submit" class="btn btn-block btn-search" [disabled]="!f.valid">
+                        Search
+                      </button></div><br />
+                    
+                
+                      
+                </form>
+                <p class="text-danger error-block" *ngIf="!search.valid && search.touched"><small>Insira o nome do d_evs que deseja ver no campo acima!</small></p>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <!--user details response-->
+    <div class="row display-5155" *ngIf="displayUserDetailContainer">
+        <div class="col-md-5">
+            <div class="card card-1">
+                <img class="card-img-top" [src]="user?.avatar_url" alt="My Image">
+                <div class="mt-3">
+                    <p class="card-text users-names font-inter-700"><span>{{user?.name}}</span></p>
+                    <p class="users-names color-typos-4a6a92">@<span>{{user?.login}}</span></p>
+                    <ul class="list-group list-group-flush ml-80 mt-2">
+                        <li class="list-group-item color-typos-4a6a92">
+                            <p>{{user?.bio}}</p>
+                        </li>
+                    </ul>
+                    <div class="follow ml-100 color-typos-4a6a92">
+                        <p><i class="fa fa-users"></i><span> {{user?.followers}}</span> seguidores</p>
+                        <p><i class="fa fa-heart-o"></i><span> {{user?.following}}</span> seguindo</p><br />
+                        <p><i class="fa fa-building-o"></i><span> {{user?.company}}</span></p> 
+                        <p><i class="fa fa-map-marker"></i><span> {{user?.location}}</span></p>
+                        <p><i class="fa fa-briefcase"></i><span> {{user?.email}}</span></p>
+                        <p><i class="fa fa-link"></i><span> {{user?.blog}}</span></p>
+                        <p><i class="fa fa-twitter"></i><span> {{user?.twitter_username}}</span></p>
+
+                       
+                    </div>
+                    
+                        <div class="mt-4 button-contato">
+                            <small><a class="btn-contato btn-sm" href="https://github.com/{{ user?.login }}"
+                                target="_blank" rel="noopener noreferrer">Contato</a></small>
+                    </div>
+                    
+                </div>
+            </div>
+  
+        </div>
+        <div class="col-md-7">
+            <div class="row my-repository" *ngIf="displayUserRepositoryList">
+                <div class="col-md-12" *ngFor="let repository of repositories; let i=index">
+                    <div class="card card-repo">
+                        
+                        <div class="card-body text-center">
+                            <a href="{{repository.html_url}}" target="_blank" class="card-title heading font-inter-700 repo-heading">{{repository.name}}</a>
+                            <p class="card-1 font-inter-400">{{repository.description}}</p>
+                        </div>
+                        <div class="inline-content font-inter-400">
+                        <span class="float-center"><i appStarRepository title="Star Repository" class="fa fa-star-o">   {{repository.stargazers_count}}</i></span><p class="card-text"><strong class="ml-5 fa fa-circle font-inter-400">Atualizado em: <span class="badge rounded-pill text-dark font-inter-400">{{repository.updated_at | date}}</span></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngIf="!displayUserRepositoryList && displayUserErrorMessage">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="alert alert-danger" role="alert">No repositories found for {{searchText}}</div>
+                    </div>
+                </div>
+            </div>
+                   
+        </div>  
+    </div>
+
+    <!--error message if github user is not found-->
+    <div class="row" *ngIf="!displayUserDetailContainer && displayGithubUserErrorNotFound">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="card">
+            <div class="alert alert-danger" role="alert">No Github user found</div>
+        </div>
+    </div>
+</div>
