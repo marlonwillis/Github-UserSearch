@@ -49,6 +49,12 @@
     letter-spacing: 0.01em;
     color:#0069CA
   }
+  @media only screen and (max-width: 600px) {
+    .h2-typo {
+      font-size:50px;
+    }
+
+  }
   .h2-typo span {
     color:#8C19D2
   }
