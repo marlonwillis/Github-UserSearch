@@ -1,6 +1,12 @@
 .navbar {
 }
+@media only screen and (max-width: 600px) {
 
+.flex-dis {
+    margin-left: 30px;
+      
+  }
+  }
 .navbar-brand {
     color: #FFFFFF;
 }
