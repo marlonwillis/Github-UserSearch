@@ -41,7 +41,8 @@
   }
   .h2-typo{
     position: relative;
-    left: 8vh;
+    display: flex;
+    justify-content: center;
     font-family: 'Nunito',sans-serif;
     font-size: 80px;
     font-weight: 500;
